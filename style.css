@@ -1,3 +1,13 @@
+:root {
+    --content-width: 80%;
+}
+
+@media (max-width: 500px) {
+    :root {
+        --content-width: 95%;
+    }
+}
+
 html, body {
     background-color: hsl(200, 47%, 76%);
     width: 100%;
@@ -9,8 +19,8 @@ html, body {
 
 div#content {
     background-color: hsl(209, 100%, 90%);
-    width: 80%;
-    max-width: 650px;
+    width: var(--content-width, 80%);
+    max-width: 850px;
     height: 100%;
     margin: 20px auto;
     padding: 0 20px;
@@ -35,7 +45,7 @@ figure {
     border: 2px solid hsl(212, 55%, 54%);
     border-radius: 2%;
     margin: auto;
-    max-width: 650px;
+    max-width: 640px;
     background-color: white;
     padding: 5px 5px 0 5px;
 }
@@ -49,4 +59,5 @@ img#image {
     height: auto;
     max-width: 640px;
     display: block;
+    margin: auto;
 }
