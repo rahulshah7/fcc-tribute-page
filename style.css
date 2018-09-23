@@ -1,26 +1,27 @@
-body {
-    background-color: hsl(200, 100%, 76%);
+html, body {
+    background-color: hsl(200, 47%, 76%);
     width: 100%;
-    margin: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 div#content {
     background-color: hsl(209, 100%, 90%);
     width: 80%;
-    margin: auto;
+    max-width: 650px;
+    height: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 h1 {
     text-align: center;
-    font-size: 24px;
-    font-weight: 700;
-    margin: 20px;
-    padding: 20px;
-}
-
-.source-link {
-    font-style: italic;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 0;
+    margin-bottom: 0;
 }
 
 #img-div {
@@ -31,24 +32,21 @@ h1 {
 }
 
 figure {
-    border: 1px solid hsl(212, 78%, 69%);
+    border: 2px solid hsl(212, 55%, 54%);
     border-radius: 2%;
     margin: auto;
     max-width: 650px;
+    background-color: white;
+    padding: 5px 5px 0 5px;
 }
 
-figcaption {
-    background-color: white;
-    border-radius: 2%;
+figure:hover {
+    transform: scale(1.01);
 }
 
 img#image {
     width: 100%;
+    height: auto;
     max-width: 640px;
     display: block;
-    margin: 5px 5px 0 5px;
-}
-
-#tribute-info {
-    background-color: hsl(209, 100%, 90%);
 }
